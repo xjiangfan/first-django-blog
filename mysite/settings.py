@@ -25,6 +25,7 @@ SECRET_KEY = '^)%c-vt8d-$ar6=$0%-@+u4g*n(oj1!58$z=3ysmibt-#_&2$f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# 部署到服务器后需要添加相应的域名
 ALLOWED_HOSTS = []
 
 
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	# 'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -106,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 

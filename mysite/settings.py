@@ -26,7 +26,8 @@ SECRET_KEY = '^)%c-vt8d-$ar6=$0%-@+u4g*n(oj1!58$z=3ysmibt-#_&2$f'
 DEBUG = True
 
 # 部署到服务器后需要添加相应的域名
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jiangfan.pythonanywhere.com']
 
 
 # Application definition
